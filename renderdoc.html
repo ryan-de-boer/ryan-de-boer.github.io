@@ -1,0 +1,49 @@
+<html>
+<h2>RenderDoc</h2>
+
+<p>
+Modifications so can visualise in meshes viewer with textures, export obj and export a range of events as one obj. Only tested on linux, and so far only vkQuake supported. See the <a href="https://github.com/ryan-de-boer/renderdoc/tree/rdeboer">rdeboer branch</a>.
+</p>
+
+<p>
+This shows an untransformed mesh textured (VS In):<br>
+<img src="renderdoc/Screenshot From 2026-04-10 10-10-26.png" width="50%">
+</p>
+
+<p>
+This shows a transformed mesh textured (VS Out):<br>
+<img src="renderdoc/Screenshot From 2026-04-10 10-11-06.png" width="50%">
+</p>
+
+<p>
+This is how you export a local mesh to an obj. Make sure you have VS Input table selected otherwise the output would be flat. We don't support VS Output export to obj yet.<br>
+<img src="renderdoc/Screenshot From 2026-04-10 10-11-52.png" width="50%">
+</p>
+
+<p>
+This is after importing local mesh obj into Blender. Its a bit dark because we don't have the ambient lighting. You can brighten the texture if you want it to look better.<br>
+<img src="renderdoc/Screenshot From 2026-04-10 10-18-57.png" width="50%">
+</p>
+
+<p>
+Here we are going to export a range of render calls transformed - the whole of Colour Pass #1 (72-649).
+Set start event:<br>
+<img src="renderdoc/Screenshot From 2026-04-10 10-20-30.png" width="50%">
+</p>
+
+<p>
+Set end event:<br>
+<img src="renderdoc/Screenshot From 2026-04-10 10-20-49.png" width="50%">
+</p>
+
+<p>
+Export range of events to an obj:<br>
+<img src="renderdoc/Screenshot From 2026-04-10 10-20-56.png" width="50%">
+</p>
+
+<p>
+Result importing obj into Blender. Note the person normals are wrong, we'd need to transform them by the bone matrices for them to be correct. It should be fine for rigid body meshes though.<br>
+<img src="renderdoc/Screenshot From 2026-04-10 10-22-24.png" width="50%">
+</p>
+
+</html>

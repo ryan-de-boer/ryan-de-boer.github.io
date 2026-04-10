@@ -2,8 +2,10 @@
 <h2>RenderDoc</h2>
 
 <p>
-Modifications so can visualise in meshes viewer with textures, export obj and export a range of events as one obj. Only tested on linux, and so far only vkQuake supported. See the <a href="https://github.com/ryan-de-boer/renderdoc/tree/rdeboer">rdeboer branch</a>.
+Modifications so can visualise in meshes viewer with textures, export obj and export a range of events as one obj. Only tested on linux, and so far only vkQuake and Crysis Remastered supported. See the <a href="https://github.com/ryan-de-boer/renderdoc/tree/rdeboer">rdeboer branch</a>.
 </p>
+
+<h3>vkQuake</h3>
 
 <p>
 This shows an untransformed mesh textured (VS In):<br>
@@ -44,6 +46,18 @@ Export range of events to an obj:<br>
 <p>
 Result importing obj into Blender. Note the person normals are wrong, we'd need to transform them by the bone matrices for them to be correct. It should be fine for rigid body meshes though.<br>
 <img src="renderdoc/Screenshot From 2026-04-10 10-22-24.png" width="50%">
+</p>
+
+<h3>Crysis Remastered</h3>
+
+<p>
+This shows a bush rendered with texture and transparency.<br>
+<img src="renderdoc/Screenshot From 2026-04-10 12-28-09.png" width="50%">
+</p>
+
+<p>
+And this is imported into Blender<br>
+<img src="renderdoc/Screenshot From 2026-04-10 12-31-24.png" width="50%">
 </p>
 
 </html>
